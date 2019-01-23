@@ -24,7 +24,7 @@ const dog = {
         console.log(`My name is ${this.name}. This was said using implicit binding`);
     }
 };
-dog.speak();
+//dog.speak();
 // Principle 3
 //NEW BINDING
 // code example for New Binding
@@ -32,7 +32,7 @@ const Man = function(obj){
     this.name = obj.name;
 }
 const connor = new Man({name:"connor"});
-console.log(connor, "was created with new bindings");
+//console.log(connor, "was created with new bindings");
 // Principle 4
 //EXPLICIT BINDING
 // code example for Explicit Binding
