@@ -140,18 +140,19 @@ const Hero = function (attributes){
   Humanoid.call(this, attributes);
   this.attackMultiplier = attributes.attackMultiplier;
 }
+//attack function
 function attack(target){
-  console.log(this);
   const damage = Math.random()*this.attackMultiplier;
-  
   target.healthPoints -= damage;
   console.log(target.takeDamage());
   if(target.healthPoints<=0){
     console.log(target.destroy());
   }
 }
+//set hero protos
 Hero.prototype = Object.create(Humanoid.prototype);
 Hero.prototype.SuperHeroAttack = attack;
+
 //VILLIAIN
 
 const Villain = function(attributes){
